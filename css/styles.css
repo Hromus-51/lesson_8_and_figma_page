@@ -1,0 +1,228 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background: url('../img/pattern_08.png');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px	#dcdcdc4d, -1px -1px 8px	#dcdcdc4d;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    background: url('../img/pattern_06.png');
+}
+
+/* шапка */
+.header__box {
+    background: url('../img/book.png') 0 0 / 80px no-repeat;
+}
+.header {
+    text-align: right;
+    padding: 20px 0 20px 0;
+    margin: 0 0 20px 0;
+}
+.title {
+    font-size: 25px;
+    color: 	#696969;
+    margin: 0 0 5px 0;
+    padding: 5px 20px 5px 20px;
+}
+.subtitle {
+    display: inline-block;
+    font-size: 20px;
+    color: 	#696969;
+    padding: 10px 20px 10px 40px;
+    background: url('../img/voskl_30.png') 0 3px/30px auto no-repeat;
+}
+.subtitle:hover {
+    color:	#929292;
+}
+.subtitle:active {
+    color:	#929292;
+    color:	#f12c12b7;
+    text-shadow: 5px 5px 50px #f12c12b6, -5px -5px 50px  #f12c12b6;
+}
+
+/* контент */
+.suprise-box {
+    margin: 0 0 30px 0;
+}
+.suprise-box__title {
+    font-size: 45px;
+    padding: 20px 0 10px 0;
+    color: #696969;
+    text-shadow: 2px 2px 2px #181818;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.suprise-box__title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #696969;
+    margin: 0 auto;
+}
+.casket {
+    padding: 20px 40px 30px 90px;
+    background: url('../img/background.png') 550px 30px / 530px no-repeat;
+}
+
+/* штурмовик */
+/* кнопка */
+.suprise-box__item {
+    color:	#3f3f3f;
+    margin: 0 0 20px 0;
+}
+.suprise-box__list li{
+    margin:  0 0 15px 0;
+}
+.suprise-box__button {
+    font-size: 40px;
+    padding: 3px 3px 3px 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #181818;
+}
+.suprise-box__button:hover {
+    color:	#757575;
+}
+.suprise-box__button:active {
+    color:	#f12c12b7;
+    text-shadow: 5px 5px 50px #f12c12b6, -5px -5px 50px  #f12c12b6;
+}
+.suprise-box__button::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('../img/button.png') 50% / 35px no-repeat;
+    margin: 0 10px 0 0;
+    box-shadow: 3px 3px 5px #181818;
+}
+.suprise-box__button:hover::before {
+    background-color: #ffd700;
+}
+.suprise-box__button:active::before {
+    background-color: #ff1e00;
+    box-shadow: 5px 5px 50px  #f12c12b6, -5px -5px 50px  #f12c12b6;
+}
+
+/* коробка */
+.suprise-box__hedgehopper {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow:  inset 3px 3px 10px #141414, inset -3px -3px 10px  #363636b6;
+}
+.suprise-box__content {
+    padding: 120px;
+    border: 2px solid #181818;
+    border-radius: 5px;
+}
+.suprise-box__text {
+    width: 450px;
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #3f3f3f;
+}
+.suprise-box__text p::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #3f3f3f;
+    margin: 7px;
+}
+.suprise-box__text::before {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 1px;
+    background: #3f3f3f;
+    margin: 0 0 5px 0;
+}
+.suprise-box__button:active + .suprise-box__hedgehopper {
+    background: url('../img/avatar_01.png') 50%/ 180px no-repeat, url('../img/background_02.png') 10px 6px /385px no-repeat, url('../img/box.png') no-repeat;
+}
+.suprise-box__button:hover + li {
+    border: 2px solid #757575;
+}
+.suprise-box__button:active ~ li {
+    color: #999999;
+}
+.suprise-box__button:active ~ li::before {
+    background: #f12c12b7;
+    box-shadow: 10px 10px 50px #f12c12, -10px -10px 50px #f12c12;
+}
+.suprise-box__button:active ~ li p::before {
+    background: #f12c12b7;
+    box-shadow: 10px 10px 50px 1px #f12c12, -10px -10px 50px 1px #f12c12;
+}
+
+/* железный человек */
+.suprise-box__ironman {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow:  inset 3px 3px 10px #141414, inset -3px -3px 10px  #363636b6;
+}
+.suprise-box__button:active + .suprise-box__ironman {
+    background: url('../img/avatar_02.png') 50%/ 180px no-repeat, url('../img/background_03.png') 10px 15px /380px no-repeat, url('../img/box.png') no-repeat;
+}
+
+/* хайзенберг */
+.suprise-box__heisenberg {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow:  inset 3px 3px 10px #141414, inset -3px -3px 10px  #363636b6;
+}
+.suprise-box__button:active + .suprise-box__heisenberg {
+    background: url('../img/avatar_03.png') 50%/ 180px no-repeat, url('../img/background_04.png') 10px 15px /380px no-repeat, url('../img/box.png') no-repeat;
+}
+
+/* наруто */
+.suprise-box__naruto {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow:  inset 3px 3px 10px #141414, inset -3px -3px 10px  #363636b6;
+}
+.suprise-box__button:active + .suprise-box__naruto {
+    background: url('../img/avatar_04.png') 50%/ 180px no-repeat, url('../img/background_05.png') 20px 15px /370px no-repeat, url('../img/box.png') no-repeat;
+}
+
+/* марио */
+.suprise-box__mario {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow:  inset 3px 3px 10px #141414, inset -3px -3px 10px  #363636b6;
+}
+.suprise-box__button:active + .suprise-box__mario {
+    background: url('../img/avatar_05.png') 50%/ 180px no-repeat, url('../img/background_06.png') 20px 20px /370px no-repeat, url('../img/box.png') no-repeat;
+}
+
+/* подвал */
+.signature {
+    padding: 30px 10px 30px 20px ;
+    max-width: 210px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #696969;
+    text-align: center;
+    background: url("../img/flash.png") 0 15px no-repeat;
+}
